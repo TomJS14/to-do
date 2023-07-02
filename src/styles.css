@@ -73,80 +73,17 @@ h1 {
 }
 
 
-
-.modal {
-    text-align: center;
-    border-radius: 20px;
-    background-color: var(--feldgrau);
-    color: white;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    gap: 10px;
-    max-width: 300px;
-
-}
-
-.task-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.modal h1 {
-    padding-bottom: 20px;
-}
-
-.task-form input{
-    margin: 5px 0px 5px 0;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-    padding: 2px;
-}
-
 .container {
     margin: 10px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
 
-.taskCard {
-    display: grid;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
-    background-color: var(--feldgrau);
-    border-radius: 6px;
-    gap: 10px;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-weight: 500;
-    
-}
 
-.edit-button {
-    background: #5E5DF0;
-    border-radius: 99px;
-    box-shadow: #5E5DF0 0 10px 20px -10px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-    font-weight: 700;
-    line-height: 24px;
-    padding: 8px 18px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: fit-content;
-    word-break: break-word;
-    border: 0;
-    margin: 10px;
-    width: auto;
-    padding: 4px 9px;
-}
+
+
+ 
 
 
 footer {
@@ -160,6 +97,74 @@ footer {
     font-weight: 500;
 }
 
+.title-input {
+    background-color: transparent;
+}
+
+.task-list {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.list-name {
+    cursor: pointer;
+    list-style:square
+}
+
+.list-name:hover {
+    color: white;
+}
+
+.active-list {
+    color: white;
+    font-weight: 800;
+}
+
+.list-title {
+    font-size: 3rem;
+    font-weight: 800;;
+}
+
+.task-list-header {
+    font-size: 2rem;;
+    font-weight: 800;
+}
+
+.lists {
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.todo-list {
+    margin: 10px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.task {
+    
+    display: flex;
+}
+
+.date-input {
+    width: 10%;
+    align-items: right;
+    margin-left: auto;
+    
+}
 
 
 
