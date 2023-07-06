@@ -32,4 +32,6 @@ Functionality
 
 1. Using Date object & formatting dates
 
-2. 
+2. using local storage
+
+3. Using template elements to make dom creation easier / less code

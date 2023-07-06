@@ -1,28 +1,27 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   entry: {
-    index: "./src/index.js",
+    index: './src/index.js',
   },
-  devtool: "inline-source-map",
+  devtool: 'inline-source-map',
   devServer: {
-    static: "./dist",
+    static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
-        title: "To-do",
-        template: "./dist/index.html",
-        inject: false, //Prevents adding script tags so i can add manually
+      title: 'To-do',
+      template: './dist/index.html',
+      inject: false, // Prevents adding script tags so i can add manually
     }),
   ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    publicPath: "/",
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -41,7 +40,7 @@ module.exports = {
     ],
   },
   optimization: {
-    runtimeChunk: "single",
+    runtimeChunk: 'single',
   },
-  
+
 };
