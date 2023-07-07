@@ -20,6 +20,7 @@
       <div class="new-task-input">
         <form action="" data-new-list-form>
           <input
+            type="text"
             data-new-list-input
             class="new-list"
             placeholder="New To-Do List"
@@ -28,21 +29,27 @@
         </form>
       </div>
     </header>
+
     <div class="container">
       <div class="lists">
         <h2 class="task-list-header">My To-Do's</h2>
-        <ul class="task-list" data-lists></ul>
+        <ul class="task-list" data-lists>
+          <!-- DOM content here -->
+        </ul>
       </div>
+
       <div class="todo-list" data-list-display-container>
         <div class="todo-header">
           <h2 class="list-title" data-list-title></h2>
           <p class="task-count" data-list-count></p>
         </div>
+
         <div class="todo-body">
           <div class="tasks" data-tasks></div>
           <div class="new-task-creator">
             <form action="" data-new-task-form>
               <input
+                type="text"
                 class="new-task"
                 placeholder="Add new task"
                 data-new-task-input
@@ -51,6 +58,7 @@
             </form>
           </div>
         </div>
+
         <div class="delete-stuff">
           <button class="btn delete" data-clear-complete-tasks-button>
             Clear completed tasks
@@ -61,14 +69,15 @@
         </div>
       </div>
     </div>
+
     <footer class="footer">
       <p>
         <script>
           document.write(new Date().getFullYear());
         </script>
         Made by TomJS14
-        <a href="https://github.com/TomJS14" class="nav-link" target="_blank"
-          ><svg
+        <a href="https://github.com/TomJS14" class="nav-link" target="_blank">
+          <svg
             viewbox="0 0 100 100"
             width="28"
             height="26"
@@ -84,11 +93,16 @@
         >
       </p>
     </footer>
-    <template id="task-template"
-      ><div class="task">
+
+    <template id="task-template">
+      <div class="task">
         <input class="checkbox" type="checkbox" />
-        <label><span class="custom-checkbox"></span></label>
-        <input class="date-input" type="date" data-input-due-date /></div
-    ></template>
+
+        <label>
+          <span class="custom-checkbox"></span>
+        </label>
+        <input class="date-input" type="date" data-input-due-date />
+      </div>
+    </template>
   </body>
 </html>

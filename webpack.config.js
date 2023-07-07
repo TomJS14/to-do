@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "To-do",
-      template: "./dist/index.html",
+      template: "./src/index.html",
       inject: false, // Prevents adding script tags so i can add manually
     }),
   ],
