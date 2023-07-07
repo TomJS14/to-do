@@ -2,7 +2,9 @@
   "name": "to-do",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "repository": {
+    "url": "git+https://github.com/{TomJS14}/{to-do}.git"
+  },
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
