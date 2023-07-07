@@ -286,6 +286,7 @@ label:hover {
 .task-div {
   position: relative;
   opacity: 50%;
+  z-index: 2;
 }
 
 .task-div:after {
@@ -298,6 +299,7 @@ label:hover {
   content: "";
   width: 100%;
   display: block;
+  z-index: -1;
 }
 
 form[data-new-task-form] {
@@ -380,6 +382,8 @@ input[type="date"],
 
 input {
   margin: 0;
+  outline: none;
+  border: none;
 }
 
 .footer svg {
