@@ -1,4 +1,4 @@
-import "./styles.css";
+import "styles.css";
 
 // get DOM elements (make into a function to deam with DOM manipulation)
 
